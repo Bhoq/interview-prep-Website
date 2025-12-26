@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interview Prep KPI Dashboard</title>
+  <meta name="description" content="Interview Prep KPI dashboard with YTD/MTD metrics and recommendations." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">IP</div>
+        <div>
+          <h1>Interview Prep</h1>
+          <p class="sub">Mini KPI dashboard + recommendations</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#kpis">KPIs</a>
+        <a href="#recommendations">Recommendations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Track outcomes. Improve interviews.</h2>
+        <p>
+          A quick snapshot of interview prep impact using simple KPIs (YTD/MTD).
+          Built as a static site for GitHub Pages.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#kpis">View KPIs</a>
+          <a class="btn btn-ghost" href="#recommendations">See Recommendations</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="callout">
+          <div class="callout-title">KPI Name</div>
+          <div class="callout-value">Interview Prep</div>
+          <div class="callout-note">Last updated: <span id="lastUpdated">—</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI SECTION -->
+    <section id="kpis" class="section">
+      <div class="section-head">
+        <h3>KPIs (YTD / MTD)</h3>
+        <div class="pill">Executive Snapshot</div>
+      </div>
+
+      <div class="grid kpi-grid">
+        <article class="card kpi-card">
+          <div class="card-head">
+            <h4>YTD People Helped</h4>
+            <span class="tag tag-blue">YTD</span>
+          </div>
+          <div class="kpi-value" id="kpiPeopleYTD">200</div>
+          <div class="kpi-meta">
+            <span>Metric:</span> Interview Prep Participants
+          </div>
+        </article>
+
+        <article class="card kpi-card">
+          <div class="card-head">
+            <h4>MTD People Helped</h4>
+            <span class="tag tag-teal">MTD</span>
+          </div>
+          <div class="kpi-value" id="kpiPeopleMTD">35</div>
+          <div class="kpi-meta">
+            <span>Metric:</span> New participants this month
+          </div>
+        </article>
+
+        <article class="card kpi-card">
+          <div class="card-head">
+            <h4>Avg Offers (Last 6 Months)</h4>
+            <span class="tag tag-amber">Trend</span>
+          </div>
+          <div class="kpi-value" id="kpiAvgOffers">2</div>
+          <div class="kpi-meta">
+            <span>Per candidate</span>
+          </div>
+        </article>
+
+        <article class="card kpi-card">
+          <div class="card-head">
+            <h4>Success Rate</h4>
+            <span class="tag tag-green">Quality</span>
+          </div>
+          <div class="kpi-value" id="kpiSuccess">75%</div>
+          <div class="kpi-meta">
+            <span>Definition:</span> Offers / Active candidates
+          </div>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>Tip:</strong> You can edit KPI values in <code>script.js</code> without touching HTML.
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section id="recommendations" class="section">
+      <div class="section-head">
+        <h3>4 Recommendations</h3>
+        <div class="pill">Action Plan</div>
+      </div>
+
+      <div class="grid rec-grid">
+        <article class="card rec-card">
+          <h4>1) Build a Repeatable Interview System</h4>
+          <p>
+            Use a standard structure: role research → skill mapping → STAR stories → mock interviews.
+            Keep everything in one tracker (Notion/Google Sheet).
+          </p>
+          <ul>
+            <li>Create a “Top 10 stories” library (impact + metrics).</li>
+            <li>Reuse the same story across multiple questions.</li>
+            <li>Practice a 60–90 second version per story.</li>
+          </ul>
+        </article>
+
+        <article class="card rec-card">
+          <h4>2) Master the Top BI Questions</h4>
+          <p>
+            Focus on what shows senior-level strength: metric definitions, governance, stakeholder management,
+            SQL window functions, dashboards, and data quality.
+          </p>
+          <ul>
+            <li>Prepare 5 KPI alignment examples (like Marketing vs Sales conflict).</li>
+            <li>Have 3 SQL “showcase” queries ready.</li>
+            <li>Explain your semantic layer approach (Gold model + certified metrics).</li>
+          </ul>
+        </article>
+
+        <article class="card rec-card">
+          <h4>3) Improve Offer Rate with Targeted Positioning</h4>
+          <p>
+            Customize your pitch per company: their domain, stack, and business goals.
+            Make your impact measurable and easy to repeat.
+          </p>
+          <ul>
+            <li>Use a 30-second “Why me” statement tied to outcomes.</li>
+            <li>Quantify wins (time saved, revenue, retention, risk reduction).</li>
+            <li>Bring a 1-page portfolio summary (Tableau/Power BI + governance).</li>
+          </ul>
+        </article>
+
+        <article class="card rec-card">
+          <h4>4) Add Consistency + Confidence with Weekly Practice</h4>
+          <p>
+            Treat interviews like a performance skill: short sessions, frequent repetition, and feedback loops.
+          </p>
+          <ul>
+            <li>3 mock interviews/week (record + review).</li>
+            <li>Daily 20 minutes: SQL + one STAR story.</li>
+            <li>Build an “objections” list and practice responses.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-left">
+        <strong>Interview Prep</strong> • KPI Snapshot
+      </div>
+      <div class="footer-right">
+        <span class="muted">Built for GitHub Pages</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
